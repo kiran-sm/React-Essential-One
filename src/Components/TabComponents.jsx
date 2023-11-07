@@ -1,11 +1,10 @@
 import React from "react";
+import "./tab.css";
 
-export default function TabComponents(props) {
+export default function TabComponents(props, onSelect) {
   return (
-    <div>
-      <li>
-        <button>{props.children}</button>
-      </li>
-    </div>
+    <li>
+      <button onClick={onSelect}>{props.children}</button>
+    </li>
   );
 }
